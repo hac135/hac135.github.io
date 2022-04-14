@@ -3,12 +3,18 @@ const ap = new APlayer({
     fixed: true,
     autoplay: false,
     audio: [
+    {
+        name: 'silent is gold',
+        artist: 'gongzi',
+        url: 'https://music.163.com/#/song?id=1851228571',
+        cover: 'http://p2.music.126.net/sqWH4yHJ5FrCyI1KwwnCeQ==/109951166425189993.jpg?param=50y50',
+    },
 	  {
         name: 'dear,thats not love',
         artist: 'LiFanyi',
         url: 'http://freetyst.nf.migu.cn/public/product4th/product36/2019/09/0620/2019%E5%B9%B409%E6%9C%8806%E6%97%A519%E7%82%B934%E5%88%86%E5%86%85%E5%AE%B9%E5%87%86%E5%85%A5%E5%92%AA%E5%92%95%E9%9F%B3%E4%B9%90%E8%87%AA%E6%9C%89%E7%89%88%E6%9D%834222%E9%A6%96/%E6%A0%87%E6%B8%85%E9%AB%98%E6%B8%85/MP3_320_16_Stero/6990539Z2BA.mp3?channelid=03&k=0909d8bfda1e2102&t=1569254540&msisdn=89b43b31-92b4-4fe6-807b-2eaefd63e15b',
         cover: 'https://www.vxotu.com/u/20200315/19190110.jpg',
-      },
+    },
 	  {
         name: '说好不哭',
         artist: 'Jay',
