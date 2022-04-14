@@ -1,5 +1,5 @@
 photo ={
-    page: 3,
+    page: 1,
     //offset 用于设置照片数量的上限
     offset: 80,
     init: function () {
