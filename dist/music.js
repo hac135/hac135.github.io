@@ -6,7 +6,7 @@ const ap = new APlayer({
     {
         name: 'silent is gold',
         artist: 'gongzi',
-        url: 'https://music.163.com/#/song?id=1851228571',
+        url: 'http://music.163.com/song/media/outer/url?id=1851228571.mp3',
         cover: 'http://p2.music.126.net/sqWH4yHJ5FrCyI1KwwnCeQ==/109951166425189993.jpg?param=50y50',
     },
 	  {
