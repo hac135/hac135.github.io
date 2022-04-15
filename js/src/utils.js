@@ -46,6 +46,7 @@ NexT.utils = NexT.$u = {
     });
   },
 
+
   /**
    * Tabs tag listener (without twitter bootstrap).
    */
