@@ -22,8 +22,8 @@ photo ={
            imageX = imageSize.split('.')[0];
            imageY = imageSize.split('.')[1];
            //这里 250 指的是图片的宽度，可以根据自己的需要调整相册中照片的大小
-            li += '<div class="card" style="width:300px">' +
-                    '<div class="ImageInCard" style="height:'+ 300 * imageY / imageX + 'px">' +
+            li += '<div class="card" style="width:250px">' +
+                    '<div class="ImageInCard" style="height:'+ 250 * imageY / imageX + 'px">' +
                     //href 和 src 的链接地址是相册照片外部链接，也可以放博客目录里
                       '<a data-fancybox="gallery" href="https://blogphotos-1258396703.cos.ap-guangzhou.myqcloud.com/photosv1/' + imgNameWithPattern + '?raw=true" data-caption="' + imgName + '">' +
                         '<img src="https://blogphotos-1258396703.cos.ap-guangzhou.myqcloud.com/photosv1/' + imgNameWithPattern + '?raw=true"/>' +
