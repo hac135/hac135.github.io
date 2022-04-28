@@ -191,7 +191,7 @@
 <meta property="og:image" content="https://github.com/hac135/my_images/blob/master/20200321_%E7%BC%93%E5%AD%98%E9%9B%AA%E5%B4%A9%E8%A7%A3%E5%86%B3.png?raw=true">
 <meta property="og:image" content="https://github.com/hac135/my_images/blob/master/20200321_%E7%BC%93%E5%AD%98%E7%A9%BF%E9%80%8F.png?raw=true">
 <meta property="og:image" content="https://raw.githubusercontent.com/hac135/my_images/master/20210316_rehash.jpg">
-<meta property="og:updated_time" content="2021-03-16T13:50:53.055Z">
+<meta property="og:updated_time" content="2022-04-28T01:42:41.056Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Redis">
 <meta name="twitter:description" content="Redis简介Redis 是完全开源免费的，使用C语言开发，遵守BSD协议，是一个高性能的key-value数据库。 Redis 与其他 key - value 缓存产品相比有以下三个特点：  Redis支持数据的持久化，可以将内存中的数据保存在磁盘中，重启的时候可以再次加载进行使用。 Redis不仅仅支持简单的key-value类型的数据，同时还提供list，set，zset，hash等数据结构">
@@ -525,7 +525,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2021-03-16 21:50:53" itemprop="dateModified" datetime="2021-03-16T21:50:53+08:00">2021-03-16</time>
+                <time title="修改时间：2022-04-28 09:42:41" itemprop="dateModified" datetime="2022-04-28T09:42:41+08:00">2022-04-28</time>
               
             
           </span>
@@ -604,6 +604,8 @@
 <p><strong>跳表：</strong>跳表全称为跳跃列表，它允许快速查询，插入和删除一个有序连续元素的数据链表。跳跃列表的平均查找和插入时间复杂度都是O(logn)。快速查询是通过维护一个多层次的链表，且每一层链表中的元素是前一层链表元素的子集。</p>
 <p>添加元素时，索引要添加到几层呢？随机函数，选择要添加到K层！</p>
 <p><img src="https://github.com/hac135/my_images/blob/master/20200803_%E8%B7%B3%E8%A1%A8.png?raw=true" alt=""></p>
+<p>插入新节点过程<br>1.新节点和各层索引节点逐一比较，确定原链表的插入位置。O（logN）<br>2.把索引插入到原链表。O（1）<br>3.利用抛硬币的随机方式，决定新节点是否提升为上一级索引。结果为“正”则提升并继续抛硬币，结果为“负”则停止。O（logN）<br>总体上，跳跃表插入操作的时间复杂度是O（logN），而这种数据结构所占空间是2N，既空间复杂度是 O（N）。</p>
+<p>删除节点过程<br>1.自上而下，查找第一次出现节点的索引，并逐层找到每一层对应的节点。O（logN）<br>2.删除每一层查找到的节点，如果该层只剩下1个节点，删除整个一层（原链表除外）。O（logN）<br>总体上，跳跃表删除操作的时间复杂度是O（logN）。</p>
 <h3 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h3><p>String, Hash, List, Set, Zset, Bitmap, HyperLogLog, Geospatial</p>
 <p>理解：redis 都是数据结构外面再套一个key, 所以String 就是我们常见的key -val普通形式</p>
 <h3 id="redis-过期策略"><a href="#redis-过期策略" class="headerlink" title="redis 过期策略"></a>redis 过期策略</h3><p>1）定时删除，每个k-v对都有一个定时器（timer)，过期就删。内存友好，CPU不友好</p>
